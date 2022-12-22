@@ -28,7 +28,7 @@ ActionKey {
     // Internal proerty for preserving previous active keypad state
     property string __oldKeypadState: panel.activeKeypadState
 
-    onPressed: {
+    onReleased: {
         Feedback.keyPressed();
 
         if (panel.state == "CHARACTERS") {
